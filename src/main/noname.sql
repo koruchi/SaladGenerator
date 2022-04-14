@@ -1,18 +1,18 @@
-CREATE TABLE Categories (
-                         Type varchar(255) NOT NULL,
-                         Origin varchar(255) NOT NULL,
-                         CONSTRAINT PK_Categories PRIMARY KEY (Type)
+CREATE TABLE CATEGORIES (
+                         TYPE varchar(255) NOT NULL,
+                         ORIGIN varchar(255) NOT NULL,
+                         CONSTRAINT PK_Categories PRIMARY KEY (TYPE)
 );
 
-CREATE TABLE Ingredients (
-                        Name varchar(255) NOT NULL,
-                        Type  varchar(255) NOT NULL,
-                        PRIMARY KEY (Name),
-                        CONSTRAINT FK_Ingredients FOREIGN KEY (Type)
-                        REFERENCES Categories(Type)
+CREATE TABLE INGREDIENTS (
+                        NAME varchar(255) NOT NULL,
+                        TYPE  varchar(255) NOT NULL,
+                        PRIMARY KEY (NAME),
+                        CONSTRAINT FK_Ingredients FOREIGN KEY (TYPE)
+                        REFERENCES CATEGORIES(TYPE)
 );
 
-INSERT INTO Categories (Type, Origin)
+INSERT INTO CATEGORIES (TYPE, ORIGIN)
 VALUES
        ('Vegetable', 'Vegetable'),
        ('Fruit', 'Vegetable'),
@@ -24,7 +24,7 @@ VALUES
        ('Eggs', 'Animal'),
        ('Meat', 'Animal');
 
-INSERT INTO Ingredients (Name, Type)
+INSERT INTO Ingredients (NAME, TYPE)
 VALUES ('Apple', 'Fruit'),
        ('Orange', 'Fruit'),
        ('Tomato', 'Vegetable');
