@@ -20,7 +20,7 @@ public class LandingPageController {
     @RequestMapping("/")
     public ModelAndView showFirstView(ModelAndView modelAndView) {
         modelAndView.setViewName("first-view");
-        modelAndView.getModel().put("category", categoryService. findAll());
+        modelAndView.getModel().put("category", categoryService.findAll());
 
         return modelAndView;
     }
