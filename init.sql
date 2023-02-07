@@ -32,21 +32,22 @@ INSERT INTO categories (name, origin)
 VALUES ('greens', 'vegetarian'),
         ('proteins_vege', 'vegetarian'),
         ('proteins_animal', 'animal'),
-        ('vegetable',  'vegetarian'),
+        ('vegetable', 'vegetarian'),
         ('fruit', 'vegetarian'),
-        ('grains',  'vegetarian'),
-        ('pasta',  'vegetarian'),
-        ('sauce_vege',  'vegetarian'),
-        ('sauce_animal',  'vegetarian'),
+        ('grains', 'vegetarian'),
+        ('pasta', 'vegetarian'),
+        ('sauce_vege', 'vegetarian'),
+        ('sauce_animal', 'vegetarian'),
         ('flavour',  'vegetarian'),
-        ('crunchy_vege',  'vegetarian'),
+        ('crunchy_vege', 'vegetarian'),
         ('crunchy_animal', 'animal');
 
 
 INSERT INTO ingredients (name,type)
 VALUES ('meat', 'proteins_animal'),
        ('cheese', 'proteins_animal'),
-       ('chickpeas', 'proteins_vege'),
+       ('todo1', 'proteins_vege'), -- grains входит в эту категорию полностью
+       ('tofu', 'proteins_vege'),
        ('arugula', 'greens'),
        ('lettuce', 'greens'),
        ('spinach', 'greens'),
@@ -60,10 +61,64 @@ VALUES ('meat', 'proteins_animal'),
        ('carrot', 'vegetable'),
        ('orange', 'fruit'),
        ('cranberry', 'fruit'),
+       ('green apple', 'fruit'),
        ('quinoa', 'grains'),
        ('couscous', 'grains'),
        ('black rice', 'grains'),
        ('buckweat groats', 'grains'),
-       ('barley groats', 'grains');
+       ('barley groats', 'grains'),
+       ('lemon juice', 'sauce_vege'),
+       ('dijon mustard', 'sauce_vege'),
+       ('extra virgin olive oil', 'sauce_vege'),
+       ('grapeseed oil', 'sauce_vege'),
+       ('soy sauce', 'sauce_vege'),
+       ('flaxseed oil', 'sauce_vege'),
+       ('grape vinegar', 'sauce_vege'),
+       ('vinaigrette', 'sauce_vege'),
+       ('chili tamarind dressing', 'sauce_vege'),
+       ('truffle oil', 'sauce_vege'),
+       ('pumpkin seed oil', 'sauce_vege'),
+       ('apple vinegar', 'sauce_vege'),
+       ('balsamic vinegar', 'sauce_vege'),
+       ('cheese sauce', 'sauce_animal'),
+       ('french dressing', 'sauce_animal'),
+       ('italian herb dressing', 'sauce_animal'),
+       ('asian dressing', 'sauce_animal'),
+       ('ranch dressing', 'sauce_animal'),
+       ('mayonnaise', 'sauce_animal'),
+       ('pesto', 'sauce_animal'),
+       ('Caesar dressing', 'sauce_animal'),
+       ('honey mustard dressing', 'sauce_animal'),
+       ('thousand island dressing', 'sauce_animal'),
+       ('lemon zest', 'flavour'),
+       ('cured olives', 'flavour'),
+       ('croutons', 'flavour'),
+       ('basil', 'flavour'),
+       ('oregano', 'flavour'),
+       ('chives', 'flavour'),
+       ('dill', 'flavour'),
+       ('chili', 'flavour'),
+       ('parsley', 'flavour'),
+       ('todo2', 'crunchy_vege'),
+        ('todo3', 'crunchy_vege'),
+        ('todo4', 'crunchy_vege'),
+        ('todo5', 'crunchy_animal'),
+        ('todo6', 'crunchy_animal')
+       ;
 
 
+
+/* step 1: add just 2 of each
+   	    'greens', --
+        'vegetable',--
+        'fruit',--
+        'grains',--
+        'pasta',
+        'proteins_vege',--
+        'proteins_animal',--
+        'sauce_vege',
+        'sauce_animal',
+        'flavour',
+        'crunchy_vege',
+        'crunchy_animal'
+        */
